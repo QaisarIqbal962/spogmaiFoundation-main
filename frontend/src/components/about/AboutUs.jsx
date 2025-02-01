@@ -22,38 +22,9 @@ const AboutUs = () => {
     if (location.hash == "#whoWeAre") {
       window.scrollTo(50, 250);
     }
-    // eslint-disable-next-line eqeqeq
-    if (location.hash == "#whatWeDo") {
-      // const ScrollY = WINDOW_WIDTH >= 1390 ?
-      if (WINDOW_WIDTH >= 1390) scroollY = 1390;
-      else if (WINDOW_WIDTH < 1350 && WINDOW_WIDTH >= 800) {
-        // eslint-disable-next-line no-unused-vars
-        scroollY = 2430;
-      } else if (WINDOW_WIDTH < 800 && WINDOW_WIDTH > 400) {
-        scroollY = 2850;
-      } else if (WINDOW_WIDTH < 400 && WINDOW_WIDTH > 200) {
-        scroollY = 2900;
-      } else {
-        scroollY = 1730;
-      }
-      window.scrollTo(50, scroollY);
-    }
+   
 
-    if (location.hash === "#ourTeam") {
-      // const ScrollY = WINDOW_WIDTH >= 1390 ?
-      if (WINDOW_WIDTH >= 1390) scroollY = 1390;
-      else if (WINDOW_WIDTH < 1350 && WINDOW_WIDTH > 810) {
-        // eslint-disable-next-line no-unused-vars
-        scroollY = 3300;
-      } else if (WINDOW_WIDTH < 800 && WINDOW_WIDTH > 400) {
-        scroollY = 3730;
-      } else if (WINDOW_WIDTH < 400 && WINDOW_WIDTH > 200) {
-        scroollY = 3880;
-      } else {
-        scroollY = 2300;
-      }
-      window.scrollTo(50, scroollY);
-    }
+
   }, [location]);
 
   // jsx section
