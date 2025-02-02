@@ -13,7 +13,38 @@ const Getintouch = () => {
   return (
     <div>
       <h1 className="text-2xl font-mdium text-gray-700">
-      
+        Get in touch with us
+      </h1>
+      <p className="text-gray-500 mt-[.5rem]">
+        We'd love to hear from you. Feel free to get in touch with us on one of
+        the following methods:
+      </p>
+      <div className="mt-[2rem]">
+        <ul className="text-gray-500">
+          <li className="flex gap-3 my-[.5rem]">
+            <i className="text-blue-500 pt-[5px]">
+              <FaMapMarkerAlt />
+            </i>
+            <span>
+            Office , First Floor, STH Plaza
+              <br /> Kacha Pakha, Hangu,
+              <br /> PAKISTAN
+            </span>
+          </li>
+          <li className="flex gap-3 my-[.5rem]">
+            <i className="text-blue-500 pt-[4px]">
+              <FaPhone />
+            </i>
+            <span>+923135653685</span>
+          </li>
+          <li className="flex gap-3 my-[.5rem]">
+            <i className="text-blue-500 pt-[6px]">
+              <MdEmail />
+            </i>
+            <span>spogmai11@gmail.com</span>
+          </li>
+        </ul>
+      </div>
       <div className="mt-[3rem]">
         <h1 className="text-2xl font-mdium text-gray-700">
           Our Social Media Links
