@@ -45,50 +45,7 @@ const AboutUs = () => {
       else if (WINDOW_WIDTH < 1350 && WINDOW_WIDTH > 810) {
         // eslint-disable-next-line no-unused-vars
         scroollY = 3300;
-      } else if (WINDOW_WIDTH < 800 && WINDOW_WIDTH > 400) {
-        scroollY = 3730;
-      } else if (WINDOW_WIDTH < 400 && WINDOW_WIDTH > 200) {
-        scroollY = 3880;
-      } else {
-        scroollY = 2300;
-      }
-      window.scrollTo(50, scroollY);
-    }
-  }, [location]);
-
-  // jsx section
-
-  return (
-    <main>
-      {/* About Us section open */}
-      <div className='relative w-full h-52 bg-cover bg-center bg-[url("https://image.khaleejtimes.com/?uuid=9d530cb1-b2d2-5933-b804-fabeb18997de&function=cropresize&type=preview&source=false&q=75&crop_w=0.99999&crop_h=0.85188&x=0&y=0&width=1200&height=675")]'>
-        <div className="absolute inset-0 bg-gray-900 opacity-60"></div>{" "}
-        {/* Light black overlay */}
-        <div className="absolute text-white text-4xl font-bold pt-20 md:pl-20 pl-10">
-          <h1 className=""> About Us </h1>
-          <div className="w-24 h-1 bg-red-500 rounded-full mt-3"></div>
-        </div>
-      </div>
-      {/* About Us section Closed */}
-
-      {/* who we are section Open */}
-      <div
-        className=" lg:text-4xl text-3xl font-bold pt-24 lg:pl-24 md:pl-20 pl-4 uppercase"
-        id="whoWeAre"
-      >
-        <h1>Who WE Are</h1>
-        <div className=" w-20 h-1 bg-blue-600 rounded-full mt-3 "></div>
-      </div>
-
-      <div className="lg:flex lg:pl-24  pt-10 mb-24 px-4 md:px-10  gap-6">
-        <div className="lg:w-[50%] pl-1 pb-4 lg:pr-2 md:pr-2 sm:pr-2 text-justify">
-          <p>
-            Spogmai Foundation is a well-known and successful non-profit,
-            non-governmental, and non-political charity Hangu organization.
-            Since 2015, the Spogmai Foundation has been working to give Timely
-            Aid and Relief Support (Spogmai) to the poor people of Hangu
-            District.
-          </p>
+   
           <p className=" mt-2">
             Founded by a local patron, Tahir Fada, and later joined by other
             volunteers motivated to make a difference, the foundation has now
