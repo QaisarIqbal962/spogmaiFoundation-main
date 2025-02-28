@@ -9,6 +9,22 @@ export const Impact = [
     desc: "Food distribution among needy people",
     count: "20+",
   },
- 
+  {
+    icon: <MdOutlineFamilyRestroom size={70} />,
+    title: "Family",
+    desc: "Helped the poor family",
+    count: "20+",
+  },
+  {
+    icon: <FaArrowsDownToPeople size={70} />,
+    title: "Disabled",
+    desc: "Helped the disabled people",
+    count: "58+",
+  },
+  {
+    icon: <PiStudentFill size={70} />,
+    title: "Student",
+    desc: "Helped the Student",
+    count: "106+",
   },
 ];
