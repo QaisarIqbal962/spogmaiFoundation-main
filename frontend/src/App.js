@@ -36,7 +36,54 @@ import FoodMessage from "./components/sideBar/foodMessage/FoodMssg";
 
 function App() {
   return (
- 
+    <Router>
+      <ScrollToTop />
+      <Routes>
+        <Route path="/signin" exact element={<SignIn />} />
+        <Route path="/signup" exact element={<SignUp />} />
+        <Route path="/foodMessages" exact element={<FoodMessages />} />
+        <Route path="/foodMessage/:id" exact element={<FoodMessage />} />
+        <Route path="/messages" exact element={<Messages />} />
+        <Route path="/message/:id" exact element={<Message />} />
+
+        <Route element={<Navbar />}>
+          <Route path="/" exact element={<Home />} />
+          <Route path="/aboutus" exact element={<AboutUs />} />
+          <Route path="/contactus" element={<ContactUs />} />
+
+          <Route path="/OurActivities" exact element={<OurActivities />} />
+          <Route
+            path="/ourcauses/orphanfamilysupport"
+            exact
+            element={<OrphanFamilySupport />}
+          />
+          <Route
+            path="/ourcauses/freerationdistribution"
+            exact
+            element={<FreeRationDis />}
+          />
+          <Route
+            path="/ourcauses/poorfamilysupport"
+            exact
+            element={<PoorFamilySupport />}
+          />
+          <Route
+            path="/ourcauses/disablepeoplesupport"
+            exact
+            element={<DisabledPeopleSupport />}
+          />
+          <Route
+            path="/ourcauses/educationsupport"
+            exact
+            element={<Education />}
+          />
+          {/* Gallery Components Routing */}
+          <Route path="/gallery" exact element={<Gallery />} />
+          <Route
+            path="/gallery/picturegallery"
+            exact
+            element={<PictureGallery />}
+          />
           <Route
             path="/gallery/videogallery"
             exact
